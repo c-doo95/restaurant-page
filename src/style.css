@@ -88,3 +88,19 @@ p#detail {
 h3#title {
   font-size: 1.5rem;
 }
+
+#contactDiv {
+  display: flex;
+  align-items: center;
+  gap: 2em;
+}
+
+#contactBox {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 10%;
+}
+
+#reservation {
+  font-weight: 600;
+}
