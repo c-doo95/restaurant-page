@@ -1,4 +1,4 @@
-import "./styles.css";
+import "./style.css";
 import { genHome } from "./home.js";
 import { genMenu } from "./menu.js";
 import { genContact } from "./contact.js";
