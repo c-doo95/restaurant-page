@@ -51,3 +51,40 @@ h1 {
   font-family: cursive;
   font-size: 3.5rem;
 }
+
+div#wineList {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20%;
+}
+
+div.container {
+  display: grid;
+  grid-template: repeat(3, 1fr) / repeat(2, 1fr);
+  gap: 1em;
+}
+
+p#wine {
+  font-weight: 600;
+}
+
+div#drink {
+  font-size: 0.9rem;
+}
+
+p#dish {
+  font-weight: 600;
+}
+
+p#detail {
+  font-size: 0.9rem;
+}
+
+#title {
+  font-family: cursive;
+  font-size: 2rem;
+}
+
+h3#title {
+  font-size: 1.5rem;
+}

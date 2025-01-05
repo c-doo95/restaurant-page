@@ -4,14 +4,19 @@ const genMenu = () => {
   contentDiv.replaceChildren();
 
   const menuDiv = document.createElement("div");
+  menuDiv.id = menu;
   const drinkMenu = document.createElement("div");
+  drinkMenu.id = 'drink';
   const wineList = document.createElement("div");
+  wineList.id = 'wineList';
   const wineTitle = document.createElement("h2");
+  wineTitle.id = 'title';
   wineTitle.textContent = "Wine List";
-  wineList.appendChild(wineTitle);
+  drinkMenu.appendChild(wineTitle);
 
   const redWines = document.createElement("div");
   const reds = document.createElement("h3");
+  reds.id = 'title';
   reds.textContent = "Red";
   redWines.appendChild(reds);
 
@@ -51,6 +56,7 @@ const genMenu = () => {
 
   const whiteWines = document.createElement("div");
   const whites = document.createElement("h3");
+  whites.id = 'title';
   whites.textContent = "White";
   whiteWines.appendChild(whites);
 
@@ -94,6 +100,7 @@ const genMenu = () => {
 
   const cocktailMenu = document.createElement("div");
   const cocktailTitle = document.createElement("h2");
+  cocktailTitle.id = 'title';
   cocktailTitle.textContent = "Cocktails";
   cocktailMenu.appendChild(cocktailTitle);
   const cocktails = document.createElement("div");
@@ -135,7 +142,8 @@ const genMenu = () => {
 
   const foodMenu = document.createElement("div");
   const foodTitle = document.createElement("h2");
-  foodTitle.textContent = "mains";
+  foodTitle.id = 'title'
+  foodTitle.textContent = "Mains";
   foodMenu.appendChild(foodTitle);
 
   const itemOne = document.createElement("div");
@@ -155,7 +163,7 @@ const genMenu = () => {
   itemTwoName.textContent = "dish two";
   itemTwo.appendChild(itemTwoName);
   const itemTwoDetail = document.createElement("p");
-  itemOneDetail.id = "detail";
+  itemTwoDetail.id = "detail";
   itemTwoDetail.textContent =
     "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus dapibus.";
   itemTwo.appendChild(itemTwoDetail);
